@@ -228,7 +228,7 @@ class NaiveBayesClassifier
 		$defaultOptions = array
 			(
 				'laplace_smoothing'	=> 1,
-				'threshold'			=> 1.5,
+				'threshold'			=> 1.0000001,
 				'debug'				=> false
 			);
 
@@ -299,7 +299,7 @@ class NaiveBayesClassifier
 
 				if ($debug) { pr(sprintf('P(%s|%s) = %f', $new_token, $class_name, $P_token)); }
 
-				$P_final *= $P_token;
+				$P_final = $P_final-($P_token);
 			}
 
 			$result[$class_name] = $P_final;
