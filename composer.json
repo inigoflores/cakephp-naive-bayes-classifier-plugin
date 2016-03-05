@@ -1,0 +1,16 @@
+{
+    "name": "lecterror/cakephp-naive-bayes-classifier-plugin",
+    "type": "cakephp-plugin",
+    "description": "NaiveBayesClassifier is a CakePHP plugin which enables you to classify text by using the Naive Bayes Classifier.",
+    "keywords": ["bayes", "naive", "classifier"],
+    "homepage": "https://github.com/lecterror/cakephp-naive-bayes-classifier-plugin",
+    "require": {
+        "composer/installers": "~1.0",
+    },
+    "config": {
+        "vendor-dir": "Vendor"
+    },
+    "extra": {
+        "installer-name": "NaiveBayesClassifier"
+    }
+}
